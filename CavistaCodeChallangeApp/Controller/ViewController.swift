@@ -37,7 +37,6 @@ class ViewController: UIViewController,DataPresentationDelegate {
     func PresentData(response: [Contents]) {
         
         contentes =  realm.objects(Contents.self).sorted(byKeyPath: "type", ascending: true)
-       // print(contentes)
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
