@@ -36,7 +36,7 @@ class ViewController: UIViewController,DataPresentationDelegate {
     func PresentData(response: [Contents]) {
         
         contentes =  realm.objects(Contents.self).sorted(byKeyPath: "type", ascending: true)
-        print(contentes)
+       // print(contentes)
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -63,14 +63,7 @@ class ViewController: UIViewController,DataPresentationDelegate {
         self.configureTableView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.rowHeight = 100.0
-       
-        
-        
-        
-//        self.view.addSubview(snapView)
-//
-
-        
+               
     }
 
     
@@ -80,13 +73,8 @@ class ViewController: UIViewController,DataPresentationDelegate {
         embedController?.append(viewController: detailsView)
 
         print("\nChildViewControllers added")
-        printChildViewControllesInfo()
     }
     
-    func printChildViewControllesInfo() {
-        print("view.subviews.count: \(view.subviews.count)")
-        print("childViewControllers.count: \(children.count)")
-    }
 }
 
 extension ViewController:UITableViewDataSource,UITableViewDelegate{
