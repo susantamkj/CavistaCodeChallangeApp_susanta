@@ -11,8 +11,6 @@ import SnapKit
 import Alamofire
 
 class DetailsViewController: UIViewController {
-
-    //var content = Contents()
     
     let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
     let containerViewHeight: CGFloat = 192.0
@@ -26,6 +24,23 @@ class DetailsViewController: UIViewController {
         addButon()
     }
     
+    
+    private func addButon() {
+        let buttonWidth: CGFloat = 150
+        let buttonHeight: CGFloat = 20
+        let frame = CGRect(x:0, y: 100, width: buttonWidth, height: buttonHeight)
+        let button = UIButton(frame: frame)
+        button.setTitle("Back", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        view.addSubview(button)
+    }
+    
+    
+    @objc func buttonTapped() {
+        
+        self.view.removeFromSuperview()
+    }
     
 
     func getdata(content: Contents){
@@ -43,7 +58,6 @@ class DetailsViewController: UIViewController {
         
         subview.addSubview(activityIndicator)
         activityIndicator.color = UIColor.orange
-        //activityIndicator.startAnimating()
 
         activityIndicator.snp.makeConstraints { (make) in
             make.centerX.equalTo(subview)
@@ -97,7 +111,7 @@ class DetailsViewController: UIViewController {
                 self.activityIndicator.stopAnimating()
 
             case .failure(let error):
-                print("error--->",error)
+               // print("error--->",error)
                 self.showAlert(withTitle: "CavistaCodeChallangeApp", withMessage: "Bad image URL")
                 self.activityIndicator.stopAnimating()
             }
@@ -124,22 +138,7 @@ class DetailsViewController: UIViewController {
         aTextView.text = textData
     }
     
-    private func addButon() {
-        let buttonWidth: CGFloat = 150
-        let buttonHeight: CGFloat = 20
-        let frame = CGRect(x:0, y: 100, width: buttonWidth, height: buttonHeight)
-        let button = UIButton(frame: frame)
-        button.setTitle("Back", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        view.addSubview(button)
-    }
     
-    
-    @objc func buttonTapped() {
-        
-        self.view.removeFromSuperview()
-    }
 }
 
 
@@ -151,7 +150,9 @@ extension String {
     var isValidURL: Bool {
         let detector = try! NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
         if let match = detector.firstMatch(in: self, options: [], range: NSRange(location: 0, length: self.utf16.count)) {
+            
             // it is a link, if the match covers the whole string
+            
             return match.range.length == self.utf16.count
         } else {
             return false
