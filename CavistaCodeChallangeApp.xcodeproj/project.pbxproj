@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E36AA10254BF5E50024058D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E36AA0F254BF5E50024058D /* AppDelegate.swift */; };
+		2E36AA12254BF5E50024058D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E36AA11254BF5E50024058D /* SceneDelegate.swift */; };
+		2E36AA14254BF5E50024058D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E36AA13254BF5E50024058D /* ViewController.swift */; };
+		2E36AA19254BF5E80024058D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E36AA18254BF5E80024058D /* Assets.xcassets */; };
+		2E36AA1C254BF5E80024058D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E36AA1A254BF5E80024058D /* LaunchScreen.storyboard */; };
+		2E36AA2A254C2F530024058D /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E36AA29254C2F530024058D /* ConnectionManager.swift */; };
+		2E36AA2D254C3CE40024058D /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E36AA2C254C3CE40024058D /* Contents.swift */; };
+		2EB6E4F5255D6428004CB0A3 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6E4F4255D6428004CB0A3 /* Constant.swift */; };
+		2EF2C5A125611034009CAC87 /* EmbedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C5A025611034009CAC87 /* EmbedController.swift */; };
+		2EFA932D255EEE6B0090C831 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA932C255EEE6B0090C831 /* DetailsViewController.swift */; };
+		B91B985DAEBD2B5E4D8C5F3D /* Pods_CavistaCodeChallangeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C4D9774F98D23AAF7862A0 /* Pods_CavistaCodeChallangeApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E36AA0C254BF5E50024058D /* CavistaCodeChallangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CavistaCodeChallangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E36AA0F254BF5E50024058D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E36AA11254BF5E50024058D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2E36AA13254BF5E50024058D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E36AA18254BF5E80024058D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E36AA1B254BF5E80024058D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E36AA1D254BF5E80024058D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E36AA29254C2F530024058D /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		2E36AA2C254C3CE40024058D /* Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contents.swift; sourceTree = "<group>"; };
+		2EB6E4F4255D6428004CB0A3 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		2EF2C5A025611034009CAC87 /* EmbedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedController.swift; sourceTree = "<group>"; };
+		2EFA932C255EEE6B0090C831 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		7B11A4FA00B8EDC0DA1767A9 /* Pods-CavistaCodeChallangeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CavistaCodeChallangeApp.debug.xcconfig"; path = "Target Support Files/Pods-CavistaCodeChallangeApp/Pods-CavistaCodeChallangeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A2C4D9774F98D23AAF7862A0 /* Pods_CavistaCodeChallangeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CavistaCodeChallangeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBDF655EC35D357A2348BFFF /* Pods-CavistaCodeChallangeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CavistaCodeChallangeApp.release.xcconfig"; path = "Target Support Files/Pods-CavistaCodeChallangeApp/Pods-CavistaCodeChallangeApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E36AA09254BF5E50024058D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91B985DAEBD2B5E4D8C5F3D /* Pods_CavistaCodeChallangeApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E36AA03254BF5E50024058D = {
+			isa = PBXGroup;
+			children = (
+				2E36AA0E254BF5E50024058D /* CavistaCodeChallangeApp */,
+				2E36AA0D254BF5E50024058D /* Products */,
+				3D3038D99686D9EA08A9CF6F /* Pods */,
+				7F4AF4B389A5AE75C950E7DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E36AA0D254BF5E50024058D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E36AA0C254BF5E50024058D /* CavistaCodeChallangeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E36AA0E254BF5E50024058D /* CavistaCodeChallangeApp */ = {
+			isa = PBXGroup;
+			children = (
+				2E36AA26254C2EC70024058D /* ConnectionClass */,
+				2E36AA2B254C3CC80024058D /* DataModel */,
+				2EF2C5A4256199CE009CAC87 /* Controller */,
+				2E36AA0F254BF5E50024058D /* AppDelegate.swift */,
+				2E36AA11254BF5E50024058D /* SceneDelegate.swift */,
+				2E36AA18254BF5E80024058D /* Assets.xcassets */,
+				2E36AA1A254BF5E80024058D /* LaunchScreen.storyboard */,
+				2E36AA1D254BF5E80024058D /* Info.plist */,
+			);
+			path = CavistaCodeChallangeApp;
+			sourceTree = "<group>";
+		};
+		2E36AA26254C2EC70024058D /* ConnectionClass */ = {
+			isa = PBXGroup;
+			children = (
+				2E36AA29254C2F530024058D /* ConnectionManager.swift */,
+			);
+			path = ConnectionClass;
+			sourceTree = "<group>";
+		};
+		2E36AA2B254C3CC80024058D /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				2EB6E4F4255D6428004CB0A3 /* Constant.swift */,
+				2E36AA2C254C3CE40024058D /* Contents.swift */,
+				2EF2C5A025611034009CAC87 /* EmbedController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		2EF2C5A4256199CE009CAC87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E36AA13254BF5E50024058D /* ViewController.swift */,
+				2EFA932C255EEE6B0090C831 /* DetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D3038D99686D9EA08A9CF6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B11A4FA00B8EDC0DA1767A9 /* Pods-CavistaCodeChallangeApp.debug.xcconfig */,
+				BBDF655EC35D357A2348BFFF /* Pods-CavistaCodeChallangeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F4AF4B389A5AE75C950E7DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2C4D9774F98D23AAF7862A0 /* Pods_CavistaCodeChallangeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E36AA0B254BF5E50024058D /* CavistaCodeChallangeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E36AA20254BF5E80024058D /* Build configuration list for PBXNativeTarget "CavistaCodeChallangeApp" */;
+			buildPhases = (
+				DAA1F5AB626D4E2431CC094E /* [CP] Check Pods Manifest.lock */,
+				2E36AA08254BF5E50024058D /* Sources */,
+				2E36AA09254BF5E50024058D /* Frameworks */,
+				2E36AA0A254BF5E50024058D /* Resources */,
+				8D12AF8A77F4F15F8F890D87 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CavistaCodeChallangeApp;
+			productName = CavistaCodeChallangeApp;
+			productReference = 2E36AA0C254BF5E50024058D /* CavistaCodeChallangeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E36AA04254BF5E50024058D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Susanta Mukherjee";
+				TargetAttributes = {
+					2E36AA0B254BF5E50024058D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2E36AA07254BF5E50024058D /* Build configuration list for PBXProject "CavistaCodeChallangeApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E36AA03254BF5E50024058D;
+			productRefGroup = 2E36AA0D254BF5E50024058D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E36AA0B254BF5E50024058D /* CavistaCodeChallangeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E36AA0A254BF5E50024058D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E36AA1C254BF5E80024058D /* LaunchScreen.storyboard in Resources */,
+				2E36AA19254BF5E80024058D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D12AF8A77F4F15F8F890D87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CavistaCodeChallangeApp/Pods-CavistaCodeChallangeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CavistaCodeChallangeApp/Pods-CavistaCodeChallangeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CavistaCodeChallangeApp/Pods-CavistaCodeChallangeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA1F5AB626D4E2431CC094E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CavistaCodeChallangeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E36AA08254BF5E50024058D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E36AA14254BF5E50024058D /* ViewController.swift in Sources */,
+				2EB6E4F5255D6428004CB0A3 /* Constant.swift in Sources */,
+				2EFA932D255EEE6B0090C831 /* DetailsViewController.swift in Sources */,
+				2E36AA10254BF5E50024058D /* AppDelegate.swift in Sources */,
+				2E36AA2A254C2F530024058D /* ConnectionManager.swift in Sources */,
+				2EF2C5A125611034009CAC87 /* EmbedController.swift in Sources */,
+				2E36AA12254BF5E50024058D /* SceneDelegate.swift in Sources */,
+				2E36AA2D254C3CE40024058D /* Contents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E36AA1A254BF5E80024058D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E36AA1B254BF5E80024058D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E36AA1E254BF5E80024058D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E36AA1F254BF5E80024058D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E36AA21254BF5E80024058D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B11A4FA00B8EDC0DA1767A9 /* Pods-CavistaCodeChallangeApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CavistaCodeChallangeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Susanta.CavistaCodeChallangeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E36AA22254BF5E80024058D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBDF655EC35D357A2348BFFF /* Pods-CavistaCodeChallangeApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CavistaCodeChallangeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Susanta.CavistaCodeChallangeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E36AA07254BF5E50024058D /* Build configuration list for PBXProject "CavistaCodeChallangeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E36AA1E254BF5E80024058D /* Debug */,
+				2E36AA1F254BF5E80024058D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E36AA20254BF5E80024058D /* Build configuration list for PBXNativeTarget "CavistaCodeChallangeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E36AA21254BF5E80024058D /* Debug */,
+				2E36AA22254BF5E80024058D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E36AA04254BF5E50024058D /* Project object */;
+}
