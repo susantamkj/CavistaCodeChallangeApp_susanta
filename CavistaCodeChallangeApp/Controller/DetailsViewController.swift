@@ -8,7 +8,6 @@
 
 import UIKit
 import SnapKit
-import SDWebImage
 import Alamofire
 
 class DetailsViewController: UIViewController {
@@ -21,9 +20,6 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-        
-       // print("content.....\(content)")
     }
     
     override func viewWillLayoutSubviews() {
@@ -110,6 +106,7 @@ class DetailsViewController: UIViewController {
     }
     
     func loadTextWithView(textData: String, withView aView:UIView){
+        
         print("data......\(textData)")
         
         let aTextView = UITextView()
