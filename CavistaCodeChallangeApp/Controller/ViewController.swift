@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 import RealmSwift
 
+
 protocol DataPresentationDelegate {
     
     func PresentData(response: [Contents])
@@ -80,7 +81,6 @@ class ViewController: UIViewController,DataPresentationDelegate {
 extension ViewController:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return self.data.count
         
         return self.contentes!.count
     }
@@ -95,7 +95,6 @@ extension ViewController:UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       // print(self.contentes![indexPath.row])
         
         embedController = EmbedController(rootViewController: self)
         addChildViewControllers()
